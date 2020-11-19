@@ -17,6 +17,7 @@ EOF
 echo The final answer for this mess is $var5
 
 #数学运算
+#var3=$(expr $var2 / $var1)
 var4=$[$var1 * ($var2 - $var3)]
 echo -e '\nThe final result is '$var4
 

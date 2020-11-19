@@ -1,7 +1,6 @@
 #!/bin/bash
-
+#echo PS1='\e[32;1m$? [\u@\h \W]$\e[0m:' > /etc/profile
 #创建4个sh
-
 for (( i=1; i<=4; i++));do
 	echo '#!/bin/bash' > $i.sh
 	chmod +x $i.sh
