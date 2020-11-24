@@ -9,4 +9,6 @@ for date in $state ;do
 done
 
 
-#for file in $(ls /root/*)
+#for py in $(ls /root/*)
+
+#280
