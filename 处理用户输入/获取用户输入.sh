@@ -10,7 +10,8 @@ read -p "Please enter your age: " age
 days=$[ $age * 365 ]
 echo "That makes you over $days days old"
 
-#指定多个变量，输入的每个数据值都会分配给表中的下一个变量，如果用完了，就全分配各最后一个变量
+#指定多个变量，输入的每个数据值都会分配给表中的下一个变量，如果用完了
+#就全分配各最后一个变量
 read -p "Please enter name:" first last
 echo "Checking data for $last. $first..."
 

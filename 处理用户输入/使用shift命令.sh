@@ -1,5 +1,5 @@
 #!/bin/bash
-# shift n 移动变量
+# shift n 移动变量,不加变量默认为一次移动一个选项
 
 count=1
 while [ -n "$1" ]

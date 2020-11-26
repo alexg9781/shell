@@ -11,7 +11,7 @@ do
 	*) echo "Unknown option: $opt";;
 	esac
 done
-shift $[ $OPTIND - 1 ]
+shift $[ $OPTIND - 1 ]  # getopts 处理每个选项时，它会将 OPTIND 环境变量值增一
 count=1
 for param in "$@"
 do

@@ -2,8 +2,7 @@
 #extracting command line options and values with getopt
 # getopt command is not goot at dealing with space,we can use getopts
 set -- `getopt -q ab:c "$@"`
-while [ -n "$1" ]
-do
+while [ -n "$1" ];do
 	case "$1" in
 	-a) echo "Found the -a option";;
 	-b) param="$2"
