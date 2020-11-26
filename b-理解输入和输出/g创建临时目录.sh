@@ -5,7 +5,7 @@
 tempdir=`mktemp -d dir.XXXXXX`
 cd $tempdir
 
-tempfile1=`mktemp temp.XXXXXX`
+tempfile1=$(mktemp temp.XXXXXX)
 tempfile2=`mktemp temp.XXXXXX`
 exec 7> $tempfile1
 exec 8> $tempfile2

@@ -20,3 +20,9 @@ sed '1，5s/^/&1 /g' ip.txt
 #awk赋值
 awk -v I="var" '{if(I==$1)print $2}' ip.txt
 
+#!/bin/bash
+#download latest CURL file automatically
+
+curl -s -o /home/tiandi/curl
+http://curl.haxx.se/download/curl
+
