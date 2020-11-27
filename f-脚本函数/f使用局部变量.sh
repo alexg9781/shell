@@ -3,7 +3,7 @@
 # demonstrating the local keyword
 
 function func1 {
-	local temp=$[ $value +5 ]
+	local temp=$[ $value +5 ]   #局部变量声明
 	result=$[ $temp * 2 ]
 }
 
