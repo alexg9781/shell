@@ -1,6 +1,6 @@
 #!/bin/bash
 #sed编辑器基础
-
+sed -n '/ /p' data1   #抓取空格
 #替换标记
 sed 's/lazy/ht/' test
 
@@ -27,7 +27,7 @@ sed '2,3s/lazy/cat/' test
 sed '2,$s/lazy/cat/' test
 #2.使用文本模式过滤器,只修改用户alpine的默认shell
 sed '/alpine/s/bash/csh/' /etc/passwd
-
+echo "The cat sleeps in his hat." | sed 's/.at/"&"/g'  #匹配与替换
 
 #组合命令
 sed '2{

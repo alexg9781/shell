@@ -14,3 +14,9 @@ p
 g
 p
 }' test
+
+sed -n '/first/ {h ; n ; p ; g ; p }' data2.txt  #只反转第一行
+sed -n '{n ; p}' passwd   #显示偶数行
+sed -n '{1!G ; h ; $p }' passwd #反转文本数据
+tac passwd
+

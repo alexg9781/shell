@@ -38,3 +38,4 @@ sed '/list/ {
 r test
 d
 }' data
+

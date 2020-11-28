@@ -6,3 +6,6 @@ sed -n '{
 h
 $p
 }' $1
+
+
+# ./script.sh /etc/passwd

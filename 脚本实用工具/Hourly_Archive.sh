@@ -11,7 +11,7 @@ CONFIG_FILE=/home/tiandi/archive/Files_To_Backup
 #
 DAY=`date +%d`
 MONTH=`date +%m`
-TIME=`date +%k%M`
+TIME=`date +%0k%M`
 #
 # Set Base Archive Destination Location
 #
