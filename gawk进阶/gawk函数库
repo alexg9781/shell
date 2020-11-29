@@ -10,3 +10,4 @@ function myrand(limit)
 	return int(limit * rand())
 }
 
+# gawk -f funclib -f script4 data

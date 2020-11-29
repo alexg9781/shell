@@ -5,15 +5,14 @@
 # NR 到目前为止读的记录数量
 #下面的程序在每行开头输出行号，并在最后输出文件的总字段数
 gawk '{ total+=NF; print NR, $0 }END{ print "Total: ", total}'
-
 gawk 'BEGIN {testing="This is a test";  print testing; testing=45;  print testing}'
 
-#处理数字值
-
+#处理数字值  % ^ **
 gawk 'BEGIN{x=4; x= x*2+3; printx}'
 
 #处理数组
-gawk 'BEGIN{capital["Ill"] = "SprintField"; print capital["Ill"]}'
+gawk 'BEGIN{capital["var1"] = "SprintField"; print capital["var1"]}'
+awk 'BEGIN{V[1]=1 ;V[2]=2 ; total=V[1]+V[2];print total}'
 
 #遍历数组变量
 gawk 'BEGIN{
