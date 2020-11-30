@@ -21,3 +21,10 @@ check_url=$(wget -nv --spider $quote_url 2>&1)   #non-verbose 精简输出信息
 # 变量中的内容
 bad_url=$(echo ${check_url/*error404*/error404})
 
+curl获取http状态码
+# -I 仅测试HTTP头
+# -m 10 最多查询10s
+# -o /dev/null 屏蔽原有输出信息
+# -s silent 模式，不输出任何东西
+# -w %{http_code} 控制额外输出
+curl -Is -m 10 -o /dev/null -w %{http_code} www.baidu.com

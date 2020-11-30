@@ -30,3 +30,6 @@ function backup()
 		$cmd --defaults-file=${mycnf} --user=${user} --password=${passwd} --incremental --incremental-basedir=${datadir}&>${logdir}/${Time}-log
 					
 }
+
+getdir
+backup

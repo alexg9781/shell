@@ -1,8 +1,8 @@
 #!/bin/bash
 mysql_user='root'
-mysql_pass="bhVd!564qazWSX78U#7"
+mysql_pass="te.gGAm0KDK"
 data=$(/bin/date +%Y-%m-%d-%H:%M)
-/bin/netstat -lntup|egrep ":3306"|grep -v grep>/dev/null0
+/bin/netstat -lntup|egrep ":3306"|grep -v grep>/dev/null
 if [ $? -eq 0 ];then
 	Slave_IO=`/data/mysql/bin/mysql -u${mysql_user} -p${mysql_pass} -e "show slave status\G"|grep "Slave_IO_Running:"|awk -F": " '{print $2}'`
 	Slave_SQL=`/data/mysql/bin/mysql -u${mysql_user} -p${mysql_pass} -e "show slave status\G"|grep "Slave_SQL_Running:"|awk -F": " '{print $2}'`
