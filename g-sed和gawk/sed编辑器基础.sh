@@ -4,6 +4,12 @@ sed -n '/ /p' data1   #抓取空格
 #替换标记
 sed 's/lazy/ht/' test
 
+#sed a 匹配lo行后,行下加入
+sed -i "/lo/a -A INPUT -s $i -m state --state NEW -m tcp -p " filename
+
+#在第一到5行行前添加1 这个字符
+sed '1,5s/^/&1 /g' ip.txt
+
 #可用的替换标记
 #1.数字 表明新闻本将替换第几处模式匹配的地方
 sed 's/lazy/ht/2' test
